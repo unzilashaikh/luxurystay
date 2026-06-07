@@ -1,0 +1,32 @@
+.public-rooms-section {
+  padding-top: 48px;
+}
+
+.public-rooms-status {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+}
+
+.public-rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.public-rooms-grid .content-card {
+  height: 100%;
+}
+
+.public-rooms-grid .card-cta-btn:disabled,
+.public-rooms-grid a.card-cta-btn[aria-disabled='true'] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .public-rooms-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,117 @@
+.brand-logo-img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.sidebar-brand .brand-logo-img,
+.guest-sidebar-brand .brand-logo-img {
+  max-width: 260px;
+}
+
+.public-header .brand .brand-logo-img {
+  max-width: 280px;
+}
+
+.public-footer .brand .brand-logo-img,
+.footer-brand-logo {
+  max-width: 440px !important;
+  height: 150px !important;
+}
+
+/* Login pages only — larger logo, no duplicate title text */
+.login-page .login-brand .login-form-logo {
+  margin: 0 auto 20px;
+  max-width: 460px !important;
+  height: 155px !important;
+}
+
+.preloader .brand-logo-img,
+.preloader-brand-logo {
+  margin: 0 auto 24px;
+  max-width: 520px !important;
+  height: 180px !important;
+  animation: brandLogoFadeIn 1s forwards, brandLogoPulse 1.5s ease-in-out infinite;
+  opacity: 0;
+}
+
+.menu-modal-logo {
+  margin-bottom: 12px;
+  max-width: 240px;
+}
+
+.sidebar-brand {
+  flex-wrap: wrap;
+  min-height: 96px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/* Receptionist portal sidebar only */
+.staff-portal .staff-sidebar-logo {
+  max-width: 280px !important;
+  height: 100px !important;
+}
+
+.staff-portal .sidebar-brand {
+  min-height: 120px;
+}
+
+.housekeeping-portal .hk-sidebar-brand {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  min-height: 130px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.housekeeping-portal .hk-sidebar-logo {
+  max-width: 220px !important;
+  height: 100px !important;
+}
+
+.housekeeping-portal .hk-brand-subtitle {
+  margin: 0;
+}
+
+/* Admin portal sidebar — logo on top, label below */
+.admin-sidebar-brand {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  min-height: 140px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.admin-sidebar-brand .admin-sidebar-logo {
+  max-width: 230px !important;
+  height: 120px !important;
+}
+
+.admin-sidebar-brand .admin-brand-subtitle {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+}
+
+@keyframes brandLogoFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes brandLogoPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}

@@ -1,0 +1,129 @@
+.sidebar {
+  width: 260px;
+  background-color: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  padding: 16px var(--spacing-5);
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--spacing-3);
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  line-height: 1.2;
+}
+
+.brand-subtitle {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sidebar-menu {
+  flex: 1;
+  padding: var(--spacing-5) 0;
+  overflow-y: auto;
+}
+
+.menu-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0 var(--spacing-5);
+  margin-bottom: var(--spacing-3);
+  letter-spacing: 1px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 var(--spacing-3);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3) var(--spacing-4);
+  color: var(--color-text-muted);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: var(--color-surface-alt);
+  color: var(--color-text-main);
+}
+
+.nav-item.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.nav-item.active .nav-icon {
+  color: white;
+}
+
+.nav-icon {
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover .nav-icon {
+  color: var(--color-text-main);
+}
+
+.sidebar-footer {
+  padding: var(--spacing-4) var(--spacing-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.logout {
+  color: var(--color-danger);
+}
+
+.logout:hover {
+  background-color: #FBEFEF;
+  color: var(--color-danger);
+}
+
+.logout .nav-icon {
+  color: var(--color-danger);
+}
